@@ -1,0 +1,13 @@
+<artilce>
+  <header>
+    <h1>
+      <a href="<%= url(article.slug) %>"><%= article.title %></a>
+    </h1>
+    <time class="timeago" datetime="<%= article.time.xmlschema %>">
+      <%= article.date.strftime "%Y/%m/%d" %>
+    </time>
+  </header>
+  <section class="content">
+    <%= markdowwn article.content %>
+  </section>
+</artilce>
